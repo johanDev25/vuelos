@@ -18,7 +18,7 @@
           <tr class="<%= arrival_class(arrival) %>">
             <td class="airline-logo"><img src="<%= arrival.airline.logo_url %>" /></td>
             <td><%= arrival.flight.number %></td>
-            <td><%= arrival.str_status %></td>
+            <td><%= arrival.status %></td>
             <td class="text-center"><%= l arrival.date, format: '%H:%M' %></td>
             <td class="text-center"><%= arrival.gate %></td>
           </tr>
